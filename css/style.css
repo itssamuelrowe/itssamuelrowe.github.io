@@ -1328,6 +1328,8 @@ a.site-button{
 ul.tl li .item-title{
     font-size: 22px;
     font-weight: 500;
+    display: inline-block;
+    margin-top: -24px;
 }
 
 ul.tl li .item-detail{
@@ -1356,6 +1358,13 @@ ul.tl li .timestamp{
         padding-left: 32px;
         margin-top: -20px;
         left: 0%;
+    }
+    
+    ul.tl li .item-title{
+        font-size: 22px;
+        font-weight: 500;
+        display: inline;
+        margin-top: 0px;
     }
 }
 
