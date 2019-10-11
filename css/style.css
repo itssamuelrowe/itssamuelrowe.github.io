@@ -1371,3 +1371,43 @@ ul.tl li .timestamp{
 .copyright {
     font-size: 20px !important;
 }
+
+#favoriteQuote {
+    height: 400px;
+}
+
+.quoteText {
+    display: flex;
+    align-items: center;
+}
+
+#favoriteQuote p {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+    font-weight: 400;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/quote-background.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-layer {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
