@@ -167,7 +167,7 @@ $('.responsive').on('click', function (e) {
     if ($('.element').length) {
         $('.element').each(function () {
             $(this).typed({
-                strings: ['Let\' take a look around.', 'Hi. I am Samuel.', 'I own a dictionary without the word <i>impossible</i>.'],
+                strings: ['Let\'s take a look around.', 'Hi. I am Samuel.', 'I own a dictionary without the word <i>impossible</i>.'],
                 loop: true,
                 backDelay: 2000,                
                 typeSpeed: 10,
