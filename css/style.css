@@ -1133,12 +1133,11 @@ a.site-button{
 /*max Width 768px */
 
 @media screen and (max-width: 767px) {
-
-
     
     .home-content h1{
         font-size: 32px;
         margin-bottom: 10px;
+        letter-spacing: 3px;
     }
     
     .contact-info{
