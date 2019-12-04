@@ -46,7 +46,7 @@ $(window).load( function() {
     setTimeout(function() {
         $(".loader-wrapper").fadeOut('fast');
         (loader).fadeOut('fast');
-    }, 3500);
+    }, /* 3500 */ 1);
 
     
 
