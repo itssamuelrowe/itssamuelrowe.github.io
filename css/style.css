@@ -1432,7 +1432,7 @@ ul.tl li .timestamp{
 }
 
 .project-title {
-    margin-left: 16px;
+    /*margin-left: 16px;*/
     display: inline-block;
     font-size: 24px;
     font-weight: 600;
