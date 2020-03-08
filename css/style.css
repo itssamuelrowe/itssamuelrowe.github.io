@@ -499,7 +499,7 @@ input:-webkit-autofill {
 }
 
 .social-icons a:hover {
-    font-size: 15px;
+    font-size: 24px;
 }
 
 .github-icon:hover{
@@ -509,6 +509,11 @@ input:-webkit-autofill {
 
 .instagram-icon:hover{
     color: #cd486b!important;
+    transition: all ease 0.1s;
+}
+
+.linkedin-icon:hover{
+    color: #0e76a8!important;
     transition: all ease 0.1s;
 }
 
