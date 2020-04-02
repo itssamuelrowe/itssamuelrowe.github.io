@@ -1,6 +1,6 @@
-'use strict'; 
-$(window).load( function() {	
-    
+'use strict';
+$(window).load( function() {
+
 
     // LIGHTBOX VIDEO
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -12,10 +12,10 @@ $(window).load( function() {
 
 		fixedContentPos: false
 	});
-        
+
 //PRELOADER
         /** Loader */
-        
+
     var loader = $(".loader");
     var wHeight = $(window).height();
     var wWidth = $(window).width();
@@ -48,7 +48,7 @@ $(window).load( function() {
         (loader).fadeOut('fast');
     }, 3500);
 
-    
+
 
     // PORTFOLIO ISOTOPE
 if ($('.isotope_items').length) {
@@ -58,7 +58,7 @@ if ($('.isotope_items').length) {
 
     $('.portfolio_filter ul li').on("click", function(){
         $(".portfolio_filter ul li").removeClass("select-cat");
-        $(this).addClass("select-cat");				 
+        $(this).addClass("select-cat");
         var selector = $(this).attr('data-filter');
         $(".isotope_items").isotope({
             filter: selector,
@@ -69,37 +69,37 @@ if ($('.isotope_items').length) {
             }
     });
         return false;
-    });  
-    
+    });
+
 }
-    
-}); // window load end 
+
+}); // window load end
 
 
 
-$(document).ready( function() {	
-    
-    
+$(document).ready( function() {
+
+
     // WOW JS
     new WOW({ mobile: false }).init();
-    
-    
-      
+
+
+
     //SMOOTH SCROLL
     $(document).on("scroll", onScroll);
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
-        
+
         $('a').each(function () {
             $(this).removeClass('active');
              if ($(window).width() < 768) {
                  $('.nav-menu').slideUp();
              }
         });
-            
+
         $(this).addClass('active');
-      
+
         var target = this.hash,
         menu = target;
         target = $(target);
@@ -110,10 +110,10 @@ $(document).ready( function() {
             $(document).on("scroll", onScroll);
         });
     });
-    
-        
+
+
         function onScroll(event){
-          if ($('#home').length) {     
+          if ($('#home').length) {
     var scrollPos = $(document).scrollTop();
     $('nav ul li a').each(function () {
         var currLink = $(this);
@@ -126,31 +126,31 @@ $(document).ready( function() {
             currLink.removeClass("active");
         }
     });
-   }              
+   }
 }
 
 
-    
-    
-    //NAVBAR SHOW - HIDE
-    $(window).scroll(function() {				
-    var scroll = $(window).scrollTop();
-    var homeheight = $(".home").height() -86;			
 
-    if (scroll > homeheight ) {												
+
+    //NAVBAR SHOW - HIDE
+    $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var homeheight = $(".home").height() -86;
+
+    if (scroll > homeheight ) {
         $("nav").slideDown(100);
         } else {
         $("nav").slideUp(100);
         }
-     }); 
-    
-    	
+     });
+
+
  // RESPONSIVE MENU
 $('.responsive').on('click', function (e) {
         $('.nav-menu').slideToggle();
     });
-    
-    
+
+
     // HOME PAGE HEIGHT
      function centerInit() {
         var hometext = $('.home')
@@ -161,28 +161,28 @@ $('.responsive').on('click', function (e) {
     }
     centerInit();
     $(window).resize(centerInit);
-    
-    
+
+
     // HOME TYPED JS
     if ($('.element').length) {
         $('.element').each(function () {
             $(this).typed({
                 strings: ['Let\'s take a look around.', 'Hi. I am Samuel.', 'Believe in yourself and you will be unstoppable.'],
                 loop: true,
-                backDelay: 2000,                
+                backDelay: 2000,
                 typeSpeed: 10,
             });
         });
     }
- 
-    
+
+
     // MAGNIFIC POPUP FOR PORTFOLIO PAGE
     $('.link').magnificPopup({
         type:'image',
         gallery:{enabled:true},
         zoom:{enabled: true, duration: 300}
     });
-    
+
        // OWL CAROUSEL GENERAL JS
     var owlcar = $('.owl-carousel');
     if (owlcar.length) {
@@ -214,25 +214,25 @@ $('.responsive').on('click', function (e) {
             , });
         });
     }
-    
-    
-}); // document ready end 
+
+
+}); // document ready end
 
 
 
 /* Contact Form JS*/
 (function($){
-   'use strict'; 
-   
+   'use strict';
+
    $(".contact-form").on('submit', function(e){
         e.preventDefault();
-        
+
         var uri = $(this).attr('action');
         $("#con_submit").val('Wait...');
         var con_name = $("#con_name").val();
         var con_email = $("#con_email").val();
         var con_message = $("#con_message").val();
-        
+
         var required = 0;
         $(".requie", this).each(function() {
             if ($(this).val() == '')
@@ -274,5 +274,5 @@ $('.responsive').on('click', function (e) {
    $(".requie").keyup(function() {
         $(this).removeClass('reqError');
     });
-   
+
 })(jQuery);

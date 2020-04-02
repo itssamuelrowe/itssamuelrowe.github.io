@@ -1458,3 +1458,81 @@ ul.tl li .timestamp{
     font-size: 24px;
     font-weight: 600;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.resume-frame {
+    margin-top: 40px;
+    width: 200px;
+    height: 55px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: rgba(3, 169, 244, 1);
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .resume-button {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  .resume-button svg {
+    height: 55px;
+    width: 200px;
+    fill: none;
+    stroke-width: 4px;
+  }
+  .resume-button svg .o1 {
+    stroke: rgba(3,169,244, 0.7);
+    fill: rgb(41,182,246);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .resume-button svg .o2 {
+    stroke: white;
+    stroke-dasharray: 20 420;
+    stroke-dashoffset: 20;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .resume-button span {
+    position: absolute;
+    margin: auto 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white !important;
+  }
+
+
+
+  .resume-button:hover .o1 {
+    fill: rgba(2, 119, 189, 0.3)
+  }
+  .resume-button:hover .o2 {
+    stroke-dashoffset: -420;
+  }
